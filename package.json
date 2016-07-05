@@ -1,0 +1,35 @@
+{
+  "name": "thumbist",
+  "version": "0.0.1",
+  "description": "Server your images like a pro. node.js image hosting/serving project.",
+  "main": "thumbist.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuslanZavacky/thumbist.git"
+  },
+  "keywords": [
+    "thumbnails",
+    "images"
+  ],
+  "author": "Ruslan Zavacky <ruslan.zavacky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RuslanZavacky/thumbist/issues"
+  },
+  "homepage": "https://github.com/RuslanZavacky/thumbist#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.4.3",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "config": "^1.21.0",
+    "gcloud": "^0.36.0",
+    "mocha": "^2.5.3",
+    "pm2": "^1.1.3",
+    "sharp": "^0.15.0",
+    "sinon": "^1.17.4",
+    "winston": "^2.2.0"
+  }
+}
