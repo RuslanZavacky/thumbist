@@ -1,4 +1,3 @@
-const winston = require('../logging');
 const gcloud = require('gcloud');
 
 class GoogleCloudStorageLoader {
@@ -12,14 +11,10 @@ class GoogleCloudStorageLoader {
   }
 
   request(path, options = {width: null, height: null}) {
-    winston.profile('GCloud Load');
-
     return new Promise((resolve, reject) => {
       const file = this.gcs.bucket(this.bucket).file(path);
 
       file.get((err, fileContent, apiResponse) => {
-        winston.profile('GCloud Load');
-
         if (err) {
           return reject(err);
         }

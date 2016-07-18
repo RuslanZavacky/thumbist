@@ -1,0 +1,23 @@
+{
+  "loaders": {
+    "s3": {
+      "accessKeyId": "",
+      "secretAccessKey": "",
+      "region": "us-west-2"
+    },
+    "gcloud": {
+      "bucket": "",
+      "keyFilename": "",
+      "projectId": ""
+    },
+    "staticImage": {
+      "path": "./assets/no_image.png"
+    }
+  },
+  "server": {
+    "unsafe": true,
+    "sizes": [
+      "640x480"
+    ]
+  }
+}
